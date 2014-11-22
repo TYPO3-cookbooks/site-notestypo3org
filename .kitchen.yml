@@ -6,10 +6,20 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: debian-7
+  - name: debian-7.6
 
 suites:
   - name: default
     run_list:
       - recipe[site-notestypo3org::default]
     attributes:
+      dev_mode: true
+      site-notestypo3org:
+        proxy:
+          ssl_certificate: wildcard.vagrant
+      etherpadlite:
+        proxy:
+          hostname: notes.vagrant
+    driver_config:
+      network:
+      - ["private_network", {ip: "192.168.33.36"}]
