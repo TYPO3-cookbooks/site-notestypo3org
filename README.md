@@ -1,5 +1,6 @@
 # site-notestypo3org
 
-TODO: Enter the cookbook description here.
+## TODO
 
-FOO
+* MySQL Backup
+* Disable listening to public port
