@@ -4,7 +4,7 @@ maintainer_email 'steffen.gebert@typo3.org'
 license          'Apache2'
 description      'Installs/Configures site-notestypo3org'
 long_description 'Installs/Configures site-notestypo3org'
-version          '0.1.4'
+version          '0.1.5'
 
-depends "etherpad-lite", "= 0.2.4"
+depends "etherpad-lite", "= 0.2.5"
 depends "ssl_certificates"
