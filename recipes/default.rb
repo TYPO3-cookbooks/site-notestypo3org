@@ -24,3 +24,12 @@ node.override[:etherpadlite][:proxy][:ssl_key_path]  = node[:ssl_certificates][:
 # upstream
 #########################
 include_recipe "etherpad-lite"
+
+#########################
+# logrotate
+#########################
+
+logrotate_app "etherpad-lite" do
+  path "/var/log/etherpad-lite/etherpad-lite.log"
+  postrotate "restart etherpad-lite >/dev/null 2>&1 || true"
+end

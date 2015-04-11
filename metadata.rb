@@ -8,3 +8,4 @@ version          '0.1.9'
 
 depends "etherpad-lite", "= 0.2.5"
 depends "ssl_certificates"
+depends "logrotate", "= 1.8.0"
