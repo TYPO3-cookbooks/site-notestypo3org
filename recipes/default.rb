@@ -31,5 +31,7 @@ include_recipe "etherpad-lite"
 
 logrotate_app "etherpad-lite" do
   path "/var/log/etherpad-lite/etherpad-lite.log"
-  postrotate "restart etherpad-lite >/dev/null 2>&1 || true"
+  postrotate "/etc/init.d/etherpad-lite restart > /dev/null 2>&1 || true"
+  options ['dateext', 'missingok', 'delaycompress', 'notifempty']
+  rotate 7
 end
