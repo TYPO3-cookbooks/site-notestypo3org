@@ -1,4 +1,4 @@
-default[:etherpadlite][:git][:reference] = "1.5.4"
+default[:etherpadlite][:git][:reference] = "1.5.5"
 
 default[:etherpadlite][:proxy][:hostname] = "notes.typo3.org"
 default[:etherpadlite][:proxy][:alias_hostnames] = [
