@@ -28,7 +28,6 @@ default[:etherpadlite][:plugins] = {
   'ep_spellcheck' => '0.0.3',
   'ep_syntaxhighlighting' => '0.1.5',
   'ep_table_of_contents' => '0.1.6',
-  'ep_tasklist' => '0.0.11',
   'ep_twitter_links' => '0.0.3',
   'ep_wrap' => '0.0.4',
 }
