@@ -7,6 +7,9 @@
 # 
 #
 
+include_recipe "t3-base"
+include_recipe "t3-mysql::backup"
+
 #########################
 # SSL certs
 #########################
