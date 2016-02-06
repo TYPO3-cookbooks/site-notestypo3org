@@ -4,7 +4,7 @@ maintainer_email 'steffen.gebert@typo3.org'
 license          'Apache2'
 description      'Installs/Configures site-notestypo3org'
 long_description 'Installs/Configures site-notestypo3org'
-version          '0.2.1'
+version          '0.2.2'
 
 depends "t3-base",         "~> 0.2.0"
 
