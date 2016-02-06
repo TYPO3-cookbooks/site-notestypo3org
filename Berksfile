@@ -1,6 +1,4 @@
-source "https://supermarket.getchef.com"
+source "http://chef.typo3.org:26200"
+source "https://supermarket.chef.io"
 
 metadata
-
-cookbook "etherpad-lite",    github: "TYPO3-cookbooks/etherpad-lite"
-cookbook "ssl_certificates", github: "TYPO3-cookbooks/ssl_certificates"
