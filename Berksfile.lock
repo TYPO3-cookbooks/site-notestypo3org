@@ -112,7 +112,7 @@ GRAPH
   screen (0.7.0)
   seven_zip (2.0.0)
     windows (>= 1.2.2)
-  site-notestypo3org (0.2.3)
+  site-notestypo3org (0.2.4)
     etherpad-lite (~> 0.2.0)
     logrotate (>= 0.0.0)
     ssl_certificates (>= 0.0.0)
