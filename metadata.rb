@@ -14,3 +14,4 @@ depends "etherpad-lite",   "~> 1.0.0"
 depends "logrotate"        # pinned in t3-base
 depends "ssl_certificates"
 
+depends "chef_nginx", "= 5.0.2"
