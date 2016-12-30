@@ -115,7 +115,7 @@ GRAPH
   screen (0.7.0)
   seven_zip (2.0.2)
     windows (>= 1.2.2)
-  site-notestypo3org (0.2.4)
+  site-notestypo3org (0.3.0)
     build-essential (= 4.0.0)
     chef_nginx (= 5.0.2)
     etherpad-lite (~> 1.0.0)
