@@ -33,3 +33,6 @@ default[:etherpadlite][:plugins] = {
 }
 
 default[:'site-notestypo3org'][:proxy][:ssl_certificate] = "wildcard.typo3.org"
+
+# chef_nginx: Don't use a custom Apt repository to install Nginx
+default['nginx']['repo_source'] = 'distro'
