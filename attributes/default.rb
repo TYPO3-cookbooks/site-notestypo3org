@@ -1,16 +1,16 @@
-default[:etherpadlite][:git][:reference] = "1.6.0"
+default['etherpadlite']['git']['reference'] = '1.6.0'
 
-default[:etherpadlite][:proxy][:hostname] = "notes.typo3.org"
-default[:etherpadlite][:proxy][:alias_hostnames] = [
-    "pad.typo3.org",
-    "etherpad.typo3.org",
+default['etherpadlite']['proxy']['hostname'] = 'notes.typo3.org'
+default['etherpadlite']['proxy']['alias_hostnames'] = [
+    'pad.typo3.org',
+    'etherpad.typo3.org',
 ]
 
-default[:etherpadlite][:settings][:defaultPadText] = "Welcome to TYPO3's Etherpad Lite!\\n\\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\\n\\nPlease use this service only for community-related work!\\n\\n"
+default['etherpadlite']['settings']['defaultPadText'] = "Welcome to TYPO3's Etherpad Lite!\\n\\nThis pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents!\\n\\nPlease use this service only for community-related work!\\n\\n"
 
-# default[:etherpadlite][:settings][:apikey] comes from chef-vault
+# default['etherpadlite']['settings']['apikey'] comes from chef-vault
 
-default[:etherpadlite][:plugins] = {
+default['etherpadlite']['plugins'] = {
   'ep_headings' => '0.1.6',
   'ep_adminpads' => '0.0.11',
   'ep_author_hover' => '0.0.17',
@@ -31,8 +31,6 @@ default[:etherpadlite][:plugins] = {
   'ep_twitter_links' => '0.0.3',
   'ep_wrap' => '0.0.4',
 }
-
-default[:'site-notestypo3org'][:proxy][:ssl_certificate] = "wildcard.typo3.org"
 
 # chef_nginx: Don't use a custom Apt repository to install Nginx
 default['nginx']['repo_source'] = 'distro'
