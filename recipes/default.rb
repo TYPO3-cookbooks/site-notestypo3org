@@ -11,19 +11,6 @@ include_recipe 't3-base'
 include_recipe 't3-mysql::backup'
 
 #########################
-# SSL certs
-#########################
-include_recipe 'ssl_certificates'
-
-ssl_certificate node['site-notestypo3org']['proxy']['ssl_certificate'] do
-  ca_bundle_combined true
-end
-
-node.override['etherpadlite']['proxy']['ssl_cert_path'] = node['ssl_certificates']['path'] + '/' + node['site-notestypo3org']['proxy']['ssl_certificate'] + '.crt'
-node.override['etherpadlite']['proxy']['ssl_key_path']  = node['ssl_certificates']['path'] + '/' + node['site-notestypo3org']['proxy']['ssl_certificate'] + '.key'
-
-
-#########################
 # upstream
 #########################
 include_recipe 'etherpad-lite'
