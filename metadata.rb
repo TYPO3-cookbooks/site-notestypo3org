@@ -4,7 +4,7 @@ maintainer_email 'steffen.gebert@typo3.org'
 license          'Apache2'
 description      'Installs/Configures site-notestypo3org'
 long_description 'Installs/Configures site-notestypo3org'
-version          '0.3.1'
+version          IO.read(File.join(File.dirname(__FILE__), 'VERSION')) rescue '0.0.1'
 
 depends "t3-base",         "~> 0.2.0"
 
