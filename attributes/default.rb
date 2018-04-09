@@ -26,7 +26,6 @@ default['etherpadlite']['plugins'] = {
   'ep_scrollto' => '0.0.6',
   'ep_set_title_on_pad' => '0.1.4',
   'ep_spellcheck' => '0.0.3',
-  'ep_syntaxhighlighting' => '0.1.5',
   'ep_table_of_contents' => '0.1.15',
   'ep_twitter_links' => '0.0.3',
   'ep_wrap' => '0.0.4',
